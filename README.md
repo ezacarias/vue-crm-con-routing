@@ -7,3 +7,5 @@
 ## 185.- Instalando tailwindcss
 - npm install -D tailwindcss postcss autoprefixer
 - npx tailwindcss init -p
+
+## 186.- Creando el Header
