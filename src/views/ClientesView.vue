@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <div>
-        <h1>Hola Clientes</h1>
+    <div class="mt-10">
+        <h1 class="text-6xl">Hola Clientes</h1>
     </div>
 </template>
