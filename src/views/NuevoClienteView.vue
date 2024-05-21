@@ -1,10 +1,18 @@
 <script setup>
-import { RouterLink } from 'vue-router'
+import RouterLink from "../components/UI/RouterLink.vue";
 </script>
 
 <template>
     <div>
-        <RouterLink :to="{ name:'inicio'}">Regresar</RouterLink>
-        <h1 class="text-4xl font-extrabold text-slate-500">Agregar Cliente</h1>
+      <div class="justify-end">
+        <RouterLink 
+         to="/"
+        >
+            Regresar
+        </RouterLink>      
+      </div>
+
+        <h1 class="text-4xl font-extrabold text-slate-500"> Agregar Cliente </h1>
+
     </div>
 </template>
