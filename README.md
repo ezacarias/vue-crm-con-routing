@@ -16,3 +16,4 @@
      - https://formkit.com
 ## 192.- Instalando FormKit y nuestro primer formulario
        -npm install @formkit/vue 
+## 193.- Agregando el primer campo del formulario y que incluye FormKit

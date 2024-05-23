@@ -24,8 +24,16 @@ defineProps({
         <div class="mx-auto mt-10 bg-white shadow">
          <FormKit
          type="form"
-         :action="false"
          >
+         <FormKit
+           type="text"
+           label="Nombre"
+           placeholder ="Nombre del cliente"
+           help="Coloca el cliente que deseas agregar"
+           validation="required"
+           :validation-messages="{ required:'El nombre del cliente es obligatorio'}"
+           
+         />
          </FormKit>
         </div>
 
