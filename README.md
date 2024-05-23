@@ -14,3 +14,5 @@
 ##  190.- Como pasar props desde el router hasta la vista 
 ##  191.- ¿Qué es FormKit?
      - https://formkit.com
+## 192.- Instalando FormKit y nuestro primer formulario
+       -npm install @formkit/vue 
