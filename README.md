@@ -22,3 +22,4 @@
 -- npm i @formkit/themes
 ##195.- Agregando campos al formulario y más reglas de validación de formKit
 ##196.- Validaciones complejas en formKit
+##197.- Configuraciones adicionales al Form

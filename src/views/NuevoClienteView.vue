@@ -61,6 +61,18 @@ defineProps({
                 :validation-messages="{matches:'El formato no es valido'}"
                 
               />
+
+              <FormKit
+                type="text"
+                label="Empresa"
+                placeholder ="Empresa de cliente"       
+              />
+
+              <FormKit
+                type="text"
+                label="Puesto"
+                placeholder ="Puesto del cliente"       
+              />
               </FormKit>            
           </div>
 
