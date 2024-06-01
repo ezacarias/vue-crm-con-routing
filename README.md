@@ -18,8 +18,9 @@
        -npm install @formkit/vue 
 ## 193.- Agregando el primer campo del formulario y que incluye FormKit
 
-##194.- Añadiendo un tema para el css de formKit
+## 194.- Añadiendo un tema para el css de formKit
 -- npm i @formkit/themes
-##195.- Agregando campos al formulario y más reglas de validación de formKit
-##196.- Validaciones complejas en formKit
-##197.- Configuraciones adicionales al Form
+## 195.- Agregando campos al formulario y más reglas de validación de formKit
+## 196.- Validaciones complejas en formKit
+## 197.- Configuraciones adicionales al Form
+## 198.- Manejando el submit y Leer datos del Formulario y Leer datos del formulario
