@@ -57,8 +57,8 @@ defineProps({
                 type="text"
                 label="Telefono"
                 placeholder ="Teléfono: XXX-XXXX-XXXX "
-                validation="required|email"
-                :validation-messages="{ required:'El email del cliente es obligatorio',email:'Coloca un email valido'}"
+                validation="?matches:/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/"
+                :validation-messages="{matches:'El formato no es valido'}"
                 
               />
               </FormKit>            
