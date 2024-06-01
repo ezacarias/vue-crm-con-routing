@@ -1,6 +1,7 @@
 <script setup>
 import RouterLink from "../components/UI/RouterLink.vue";
 import Heading from "../components/Heading.vue"
+import { reactive } from "vue";
 import { FormKit } from "@formkit/vue"
 defineProps({
   titulo:{
