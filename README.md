@@ -36,3 +36,4 @@ npm install -g json-server
 ## 202.- Consultando la REST API en Vue.js
 -npm i axios
 ## 203.-  Otras formas de consultar el API
+## 204.- Creando un compute Property que revise si tenemos clientes.
