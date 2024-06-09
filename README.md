@@ -29,3 +29,7 @@
 
 ## 200.- ¿Qué son los REST API?
 -Introducción a lo que es un api, uso y metodos que lo conforman.
+## 201.- Creando una REST API en menos de 5 minutos con JSON-Server
+-Se utiliza JSON Server, se realiza la instalación de forma global utilizando:
+npm install -g json-server
+-Utilizar json-server --watch db.json --port 4000
