@@ -33,3 +33,5 @@
 -Se utiliza JSON Server, se realiza la instalación de forma global utilizando:
 npm install -g json-server
 -Utilizar json-server --watch db.json --port 4000
+## 202.- Consultando la REST API en Vue.js
+-npm i axios
