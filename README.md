@@ -35,3 +35,4 @@ npm install -g json-server
 -Utilizar json-server --watch db.json --port 4000
 ## 202.- Consultando la REST API en Vue.js
 -npm i axios
+## 203.-  Otras formas de consultar el API
