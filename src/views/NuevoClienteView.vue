@@ -1,4 +1,5 @@
 <script setup>
+import axios from 'axios'
 import RouterLink from "../components/UI/RouterLink.vue";
 import Heading from "../components/Heading.vue"
 import { reactive } from "vue";
@@ -10,7 +11,12 @@ defineProps({
 })
 
 const handleSubmit = (data)=>{
-  console.log('submit.....',data)
+  //console.log('submit.....',data)
+  axios.post('http://localhost:4800/clientes', data).
+  then(respuesta => {
+    //redireccionar
+  })
+  .catch(error => console.log(error))
 }
 </script>
 

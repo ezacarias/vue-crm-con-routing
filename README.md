@@ -37,3 +37,4 @@ npm install -g json-server
 -npm i axios
 ## 203.-  Otras formas de consultar el API
 ## 204.- Creando un compute Property que revise si tenemos clientes.
+## 205.- Registrando nuevos clientes con FormKit, Axios y JSON-server.
