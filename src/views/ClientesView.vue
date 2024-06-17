@@ -44,8 +44,11 @@ const existenClientes = computed(()=>{
                     </tr>
                     </thead>
                     <tbody class="divide-y divide-gray-200 bg-white">
-
-                    </tbody>
+                               <Cliente v-for="cliente in clientes"
+                               :key="cliente.id"
+                               :cliente="cliente"
+                               /> 
+                        </tbody>
                 </table>
             </div>
         </div>

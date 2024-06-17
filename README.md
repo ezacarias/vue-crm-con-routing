@@ -38,3 +38,4 @@ npm install -g json-server
 ## 205.- Registrando nuevos clientes con FormKit, Axios y JSON-server.
 
 ##206.- Redireccionando al Usuario después de añadir un cliente
+##207.- Mostrando la información de clientes
