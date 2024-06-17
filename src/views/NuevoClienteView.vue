@@ -15,7 +15,7 @@ defineProps({
 const handleSubmit = (data) => {
 axios.post('http://localhost:4000/clientes',data)
 .then(respuesta =>{
-    router.push({name: 'inicio'})
+  router.push({name: 'listado-clientes'})
 })
 .catch(error => console.log(error))
 }
@@ -24,11 +24,7 @@ axios.post('http://localhost:4000/clientes',data)
 <template>
     <div>
       <div class="justify-end">
-        <RouterLink 
-         to="/"
-        >
-            Regresar
-        </RouterLink>      
+        <RouterLink to="listado-clientes"> Volver </RouterLink>     
       </div>
 
         <Heading> {{ titulo }} </Heading>

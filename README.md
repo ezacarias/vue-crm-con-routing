@@ -37,5 +37,6 @@ npm install -g json-server
 ## 204.- Creando un compute Property que revise si tenemos clientes.
 ## 205.- Registrando nuevos clientes con FormKit, Axios y JSON-server.
 
-##206.- Redireccionando al Usuario después de añadir un cliente
-##207.- Mostrando la información de clientes
+## 206.- Redireccionando al Usuario después de añadir un cliente
+## 207.- Mostrando la información de clientes
+## 208.- Mostrando la información de clientes Parte 2
