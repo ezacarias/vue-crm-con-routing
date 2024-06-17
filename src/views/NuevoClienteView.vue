@@ -13,9 +13,10 @@ defineProps({
 })
 
 const handleSubmit = (data) => {
-axios.post('http://localhost:4000/clientes',data)
+  data.estado=1
+ClienteService.agregarCliente(data)
 .then(respuesta =>{
-  router.push({name: 'listado-clientes'})
+    router.push({name: 'listado-clientes'})
 })
 .catch(error => console.log(error))
 }
