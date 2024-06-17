@@ -1,22 +1,23 @@
 <script setup>
 import axios from 'axios'
+import { FormKit, componentSymbol } from "@formkit/vue";
 import RouterLink from "../components/UI/RouterLink.vue";
 import Heading from "../components/Heading.vue"
 import { reactive } from "vue";
-import { FormKit } from "@formkit/vue"
+const router = useRouter()
+
 defineProps({
   titulo:{
     type: String
   }
 })
 
-const handleSubmit = (data)=>{
-  //console.log('submit.....',data)
-  axios.post('http://localhost:4800/clientes', data).
-  then(respuesta => {
-    //redireccionar
-  })
-  .catch(error => console.log(error))
+const handleSubmit = (data) => {
+axios.post('http://localhost:4000/clientes',data)
+.then(respuesta =>{
+    router.push({name: 'inicio'})
+})
+.catch(error => console.log(error))
 }
 </script>
 

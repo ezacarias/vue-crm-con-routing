@@ -25,8 +25,6 @@
 ## 197.- Configuraciones adicionales al Form
 ## 198.- Manejando el submit y Leer datos del Formulario y Leer datos del formulario
 ## 199.- Prellenar un formulario con FormData
-
-
 ## 200.- ¿Qué son los REST API?
 -Introducción a lo que es un api, uso y metodos que lo conforman.
 ## 201.- Creando una REST API en menos de 5 minutos con JSON-Server
@@ -38,3 +36,5 @@ npm install -g json-server
 ## 203.-  Otras formas de consultar el API
 ## 204.- Creando un compute Property que revise si tenemos clientes.
 ## 205.- Registrando nuevos clientes con FormKit, Axios y JSON-server.
+
+##206.- Redireccionando al Usuario después de añadir un cliente
