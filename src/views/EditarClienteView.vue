@@ -1,12 +1,10 @@
 <script setup>
 import axios from 'axios'
-import { useRouter  } from 'vue-router';
 import { FormKit, componentSymbol } from "@formkit/vue";
 import RouterLink from "../components/UI/RouterLink.vue";
-import ClienteService from '../services/ClienteService';
 import Heading from "../components/Heading.vue"
-
-const router = useRouter()
+import { reactive } from "vue";
+///const router = useRouter()
 
 defineProps({
   titulo:{
@@ -15,13 +13,6 @@ defineProps({
 })
 
 const handleSubmit = (data) => {
-  data.estado=1
-  ClienteService.agregarCliente(data)
-  console.log(data)
-.then(respuesta =>{
-  // router.push({name: 'listado-clientes'})
-})
-.catch(error => console.log(error))
 }
 </script>
 
