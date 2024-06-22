@@ -36,10 +36,11 @@ npm install -g json-server
 ## 203.-  Otras formas de consultar el API
 ## 204.- Creando un compute Property que revise si tenemos clientes.
 ## 205.- Registrando nuevos clientes con FormKit, Axios y JSON-server.
-
 ## 206.- Redireccionando al Usuario después de añadir un cliente
 ## 207.- Mostrando la información de clientes
 ## 208.- Mostrando la información de clientes Parte 2
 ## 209.- Simplificando los llamados a axios con una url base para consultas
 ## 210.- Centralizando las URL´s de nuestra API en un Servicio
 ## 211.- Moviendo el Endpoint para crear nuevos clientes hacia el Servicio
+
+## 212.- Detectando el estado del cliente

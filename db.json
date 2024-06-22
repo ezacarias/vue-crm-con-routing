@@ -2,10 +2,20 @@
     "clientes":[
         {
             "nombre":"Juan",
+            "apellidos":"De la torre",
+            "email":"edizon1987@gmail.com",
+            "telefono":"123-123-1234",
+            "puesto": "Fullstack dev",
+            "estado":1,
             "id":1
         },
         {
-            "nombre":"Otro Juan",
+            "nombre":"Edizon",
+            "apellidos":"Zacarias",
+            "email":"edizon1987@gmail.com",
+            "telefono":"123-123-1234",
+            "puesto": "Fullstack dev",
+            "estado":0,
             "id":2
         }
     ]

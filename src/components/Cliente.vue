@@ -1,17 +1,21 @@
-<script>
-import {computed} from 'vue'
-import { RouterLink } from 'vue-router';
-import RouterLink from './RouterLink.vue';
-const props= defineProps({
+<script setup>
+import { computed} from 'vue'
+import { RouterLink } from 'vue-router'
+const props = defineProps({
     cliente:{
-        type:Object
+        type:Object,
+
     }
+});
+
+const nombreCliente = computed(()=>{
+    return props.cliente.nombre + ' ' + props.cliente.apellidos
 })
-const nombreCliente =computed(() =>{
-    return props.cliente.nombre+ ' '+ props.cliente.apellido
+
+const estadoCliente=computed(()=>{ 
+    return props.cliente.estado;
 })
 </script>
-
 <template>
     <tr>
         <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm sm:pl-0">
@@ -23,7 +27,12 @@ const nombreCliente =computed(() =>{
             <p class="text-gray-600">{{cliente.puesto}}</p>
         </td>
         <td class="whitespace-nowrap px-3 py-4 text-sm">
-
+            <button
+            class="inline-flex rounded-full px-2 text-xs font-semibold leading-5"
+            :class="[estadoCliente ? 'bg-green-100 text-green-800':'bg-red-100 text-red-800']"
+            >
+                {{ estadoCliente ? 'Activo' : 'Inactivo' }}
+            </button>
         </td>
         <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 ">
             <RouterLink to="/" class="text-indigo-600 hover:text-indigo-900 mr-5">Editar</RouterLink>

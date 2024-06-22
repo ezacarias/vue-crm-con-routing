@@ -3,25 +3,25 @@ import { onMounted, ref , computed } from 'vue';
 import ClienteService from '../services/ClienteService';
 import RouterLink from "../components/UI/RouterLink.vue";
 import Heading from "../components/Heading.vue"
+import Cliente from '../components/Cliente.vue';
 
 const clientes = ref([])
 
-onMounted(()=>{
-    ClienteService.obtenerClientes
-    axios.get('http://localhost:4000/clientes')
-    .then(({data}) => clientes.value = data )
-    .catch(error => console.log('Hubo un error'));
-})
+onMounted(() => {
+        ClienteService.obtenerClientes()
+            .then(({data}) => clientes.value = data)
+            .catch(error => console.log('Hubo un error'));
+    });
 
 defineProps({
     titulo:{
         type: String
     }
 })
-
-const existenClientes = computed(()=>{
-    return clientes.value.length > 0 
-})  
+  
+const existenClientes = computed(() => {
+        return clientes.value.length > 0;
+});
 </script>
 
 <template>
@@ -45,10 +45,11 @@ const existenClientes = computed(()=>{
                     </tr>
                     </thead>
                     <tbody class="divide-y divide-gray-200 bg-white">
-                               <Cliente v-for="cliente in clientes"
-                               :key="cliente.id"
-                               :cliente="cliente"
-                               /> 
+                               <Cliente
+                                v-for="cliente in clientes"
+                                :key="cliente.id"
+                                :cliente="cliente"
+                            />
                         </tbody>
                 </table>
             </div>

@@ -4,7 +4,7 @@ import { FormKit, componentSymbol } from "@formkit/vue";
 import RouterLink from "../components/UI/RouterLink.vue";
 import Heading from "../components/Heading.vue"
 import { reactive } from "vue";
-const router = useRouter()
+///const router = useRouter()
 
 defineProps({
   titulo:{
@@ -14,9 +14,10 @@ defineProps({
 
 const handleSubmit = (data) => {
   data.estado=1
-ClienteService.agregarCliente(data)
+  //ClienteService.agregarCliente(data)
+  console.log(data)
 .then(respuesta =>{
-    router.push({name: 'listado-clientes'})
+   // router.push({name: 'listado-clientes'})
 })
 .catch(error => console.log(error))
 }
