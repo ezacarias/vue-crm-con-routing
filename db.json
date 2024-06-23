@@ -1,42 +1,22 @@
-{
-  "clientes": [
-    {
-      "nombre": "Juan",
-      "apellidos": "De la torre",
-      "email": "edizon1987@gmail.com",
-      "telefono": "123-123-1234",
-      "puesto": "Fullstack dev",
-      "estado": 1,
-      "id": 1
-    },
-    {
-      "nombre": "Edizon",
-      "apellidos": "Zacarias",
-      "email": "edizon1987@gmail.com",
-      "telefono": "123-123-1234",
-      "puesto": "Fullstack dev",
-      "estado": 0,
-      "id": 2
-    },
-    {
-      "id": "2499",
-      "nombre": "Edizon",
-      "Apellido": "zacarias",
-      "email": "edizon1987@gmail.com",
-      "telefono": "777-272-1521",
-      "empresa": "izzy",
-      "puesto": "analista",
-      "estado": 1
-    },
-    {
-      "id": "fa28",
-      "nombre": "Brenda",
-      "Apellido": "Zacarias",
-      "email": "edizon1987@gmail.com",
-      "telefono": "777-272-1521",
-      "empresa": "conalep",
-      "puesto": "estudiante",
-      "estado": 1
-    }
-  ]
+{     "clientes":[
+        {
+            "nombre":"Juan",
+            "apellidos":"De la torre",
+            "email":"edizon1987@gmail.com",
+            "telefono":"123-123-1234",
+            "puesto": "Fullstack dev",
+            "estado":1,
+            "id":1
+        },
+        {
+            "nombre":"Edizon",
+            "apellidos":"Zacarias",
+            "email":"edizon1987@gmail.com",
+            "telefono":"123-123-1234",
+            "puesto": "Fullstack dev",
+            "estado":0,
+            "id":2
+        }
+    ]
+
 }

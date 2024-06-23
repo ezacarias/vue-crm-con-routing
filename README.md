@@ -46,3 +46,4 @@ npm install -g json-server
 ## 212.- Detectando el estado del cliente
 ## 213.- Comenzando con la edición de clientes y Routing Dinamico en Vue
 ## 214.- Obteniedo el ID del cliente a Editar
+## 215.- Consultando la API para obtener la información del cliente a editar
