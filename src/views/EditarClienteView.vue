@@ -1,10 +1,17 @@
 <script setup>
-import axios from 'axios'
-import { FormKit, componentSymbol } from "@formkit/vue";
+import { FormKit } from "@formkit/vue";
+import { useRouter, useRoute } from "vue-router";
+import ClienteService from "../services/ClienteService";
 import RouterLink from "../components/UI/RouterLink.vue";
 import Heading from "../components/Heading.vue"
-import { reactive } from "vue";
-///const router = useRouter()
+
+const router = useRouter()
+const route  = useRoute()
+
+const { id } = route.params
+
+console.log(route.params)
+console.log(id)
 
 defineProps({
   titulo:{
