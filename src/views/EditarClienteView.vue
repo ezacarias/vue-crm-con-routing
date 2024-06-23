@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, reactive } from 'vue'
+import { onMounted, reactive, ref} from 'vue'
 import { FormKit } from "@formkit/vue";
 import { useRouter, useRoute } from "vue-router";
 import ClienteService from "../services/ClienteService";
@@ -11,16 +11,12 @@ const route  = useRoute()
 
 const { id } = route.params
 
-const formData = reactive({
-    nombre:'',
-    apellido:'',
-})
+const formData = reactive({})
 
 onMounted(()=>{
     ClienteService.obtenerCliente(id)
     .then(({data}) => {
-        formData.nombre  = data.nombre
-        formData.apellido = data.apellido
+          Object.assign(formData,data)
     })
     .catch(error => console.log(error));
 })
@@ -79,7 +75,7 @@ const handleSubmit = (data) => {
                 placeholder ="Email del cliente"
                 validation="required|email"
                 :validation-messages="{ required:'El email del cliente es obligatorio',email:'Coloca un email valido'}"
-                
+                v-model="formData.email"
               />
 
               <FormKit
@@ -89,6 +85,7 @@ const handleSubmit = (data) => {
                 placeholder ="Teléfono: XXX-XXXX-XXXX "
                 validation="?matches:/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/"
                 :validation-messages="{matches:'El formato no es valido'}"
+                v-model="formData.telefono"
                 
               />
 
@@ -96,14 +93,16 @@ const handleSubmit = (data) => {
                 type="text"
                 label="Empresa"
                 name="empresa"
-                placeholder ="Empresa de cliente"       
+                placeholder ="Empresa de cliente"
+                v-model="formData.empresa"       
               />
 
               <FormKit
                 type="text"
                 label="Puesto"
                 name="puesto"
-                placeholder ="Puesto del cliente"       
+                placeholder ="Puesto del cliente" 
+                v-model="formData.puesto"      
               />
               </FormKit>            
           </div>
