@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted } from 'vue'
+import { onMounted, reactive } from 'vue'
 import { FormKit } from "@formkit/vue";
 import { useRouter, useRoute } from "vue-router";
 import ClienteService from "../services/ClienteService";
@@ -11,9 +11,17 @@ const route  = useRoute()
 
 const { id } = route.params
 
+const formData = reactive({
+    nombre:'',
+    apellido:'',
+})
+
 onMounted(()=>{
     ClienteService.obtenerCliente(id)
-    .then(({data}) => console.log(data))
+    .then(({data}) => {
+        formData.nombre  = data.nombre
+        formData.apellido = data.apellido
+    })
     .catch(error => console.log(error));
 })
  
@@ -49,6 +57,7 @@ const handleSubmit = (data) => {
                 placeholder ="Nombre del cliente"
                 validation="required"
                 :validation-messages="{ required:'El nombre del cliente es obligatorio'}"
+                v-model="formData.nombre"
                 
               />
 
@@ -59,6 +68,7 @@ const handleSubmit = (data) => {
                 placeholder ="Apellido del cliente"
                 validation="required"
                 :validation-messages="{ required:'El apellido del cliente es obligatorio'}"
+                v-model="formData.apellido"
                 
               />
 
