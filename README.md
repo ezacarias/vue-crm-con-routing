@@ -51,3 +51,4 @@ npm install -g json-server
 
 ## 218.- Actualizando un cliente, diferencias entre put y patch
 ## 219.- Cambiando el estado de un cliente
+## 220.- Eliminando clientes
