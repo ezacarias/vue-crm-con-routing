@@ -15,6 +15,10 @@ export default{
         return api.put('/clientes/' + id , data)
         .then(()=> router.push({name:'listado-clientes'}))
         .catch(error => console.log(error))
+    },
+    cambiarEstado(id, data){
+        console.log(data)
+        return api.patch('/clientes/' + id , data)
     }
 }
 

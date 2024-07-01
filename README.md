@@ -50,3 +50,4 @@ npm install -g json-server
 ## 217.- Llenando el formulario del usuario a Editar(Parte 2 de 2)
 
 ## 218.- Actualizando un cliente, diferencias entre put y patch
+## 219.- Cambiando el estado de un cliente
