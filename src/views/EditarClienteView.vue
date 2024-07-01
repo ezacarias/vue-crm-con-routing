@@ -29,6 +29,7 @@ defineProps({
 })
 
 const handleSubmit = (data) => {
+  ClienteService.actualizarCliente(id, data)
 }
 </script>
 
@@ -44,6 +45,7 @@ const handleSubmit = (data) => {
           <div class="mx-auto md:w-2/3 py-20 px-6">
               <FormKit
               type="form"
+              submit-label="Guardar Cambios"
               @submit="handleSubmit"
               >
               <FormKit

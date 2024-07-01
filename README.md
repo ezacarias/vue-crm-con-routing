@@ -42,10 +42,11 @@ npm install -g json-server
 ## 209.- Simplificando los llamados a axios con una url base para consultas
 ## 210.- Centralizando las URL´s de nuestra API en un Servicio
 ## 211.- Moviendo el Endpoint para crear nuevos clientes hacia el Servicio
-
 ## 212.- Detectando el estado del cliente
 ## 213.- Comenzando con la edición de clientes y Routing Dinamico en Vue
 ## 214.- Obteniedo el ID del cliente a Editar
 ## 215.- Consultando la API para obtener la información del cliente a editar
 ## 216.- Llenando el formulario del usuario a Editar(Parte 1 de 2)
 ## 217.- Llenando el formulario del usuario a Editar(Parte 2 de 2)
+
+## 218.- Actualizando un cliente, diferencias entre put y patch

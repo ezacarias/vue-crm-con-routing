@@ -1,3 +1,4 @@
+import { data } from "autoprefixer";
 import api from "../lib/axios";
 
 export default{
@@ -9,5 +10,11 @@ export default{
     },
     obtenerCliente(id){
         return api.get('/clientes/' + id)
+    },
+    actualizarCliente(id){
+        return api.put('/clientes/' + id , data)
+        .then(()=> router.push({name:'listado-clientes'}))
+        .catch(error => console.log(error))
     }
 }
+
